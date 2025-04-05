@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Palatino:wght@200;300;400;500&display=swap');
+
+@font-face {
+    font-family: 'TeXGyreCursor';
+    src: url('./texgyrecursor-regular.otf') ;
+}
+
+@font-face {
+    font-family: 'TeXGyrePagellaItalic';
+    src: url('./texgyrepagella-italic.otf') format('opentype');
+    font-style: italic;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.UploadRequestBlock, .trademarkBlock {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 50px 0px;
+    /* height: 100vh; */
+}
+
+.UploadRequestForm {
+    padding-bottom: 100px;
+
+}
+
+.media_form .UploadRequestForm,
+.assistance_form .UploadRequestForm,
+.bussiness-inquiries_form .UploadRequestForm {
+    padding-bottom: 0;
+}
+
+.media_form,
+.assistance_form,
+.bussiness-inquiries_form {
+    height: auto;
+}
+
+.UploadRequestBlock .topHeadingBlock {
+    margin-bottom: 30px;
+}
+
+.trademarkBlock p,
+.UploadRequestBlock .topHeadingBlock p {
+    font-size: 18px;
+    font-family: 'Palatino', serif !important;
+    /* hyphens: auto; */
+    text-align: justify;
+}
+
+.trademarkBlock .topHeadingBlock h2,
+.UploadRequestBlock .topHeadingBlock h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 21px;
+    font-family: KaTeX_Main, 'Palatino', serif !important;
+
+}
+
+.UploadRequestForm .inputGroup .inputField {
+    display: flex;
+    flex-direction: column;
+}
+
+.UploadRequestForm .inputGroup {
+    margin-bottom: 20px;
+}
+
+.UploadRequestForm .inputGroup .error {
+    color: rgb(197, 6, 6);
+    font-family: 'Palatino', serif !important;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.UploadRequestForm .inputGroup label {
+    width: 100%;
+    display: block;
+    font-weight: 600;
+    font-family: 'Palatino', serif !important;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.UploadRequestForm #uploadForm .inputGroup label,
+.UploadRequestForm #claimExistingAccountForm .inputGroup label,
+.UploadRequestForm #bussinessForm .inputGroup label,
+.UploadRequestForm #assistanceForm .inputGroup label,
+.UploadRequestForm #mediaForm .inputGroup label  {
+    font-family: KaTeX_Main !important;
+}
+
+.UploadRequestForm .inputGroup span {
+    font-family: 'Palatino', serif !important;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 5px;
+}
+
+.UploadRequestForm .inputGroup input,
+textarea {
+    /* width: 100%;  */
+    padding: 2px !important;
+    border: .5px solid gray !important;
+    font-family: TeXGyreCursor;
+    color: #696969;
+}
+
+/* .UploadRequestForm #uploadForm .inputGroup input,
+.UploadRequestForm #uploadForm .inputGroup textarea{
+    font-family: TeXGyreCursor;
+    color: #696969;
+} */
+
+.UploadRequestForm #uploadForm .inputGroup input::placeholder,
+.UploadRequestForm #claimExistingAccountForm .inputGroup input::placeholder,
+.UploadRequestForm #bussinessForm .inputGroup input::placeholder,
+.UploadRequestForm #assistanceForm .inputGroup input::placeholder,
+.UploadRequestForm #mediaForm .inputGroup input::placeholder,
+.UploadRequestForm #uploadForm .inputGroup textarea::placeholder,
+.UploadRequestForm #claimExistingAccountForm .inputGroup textarea::placeholder,
+.UploadRequestForm #bussinessForm .inputGroup textarea::placeholder,
+.UploadRequestForm #assistanceForm .inputGroup textarea::placeholder,
+.UploadRequestForm #mediaForm .inputGroup textarea::placeholder {
+    opacity: 0.5;
+}
+
+/* .media_form .UploadRequestForm,
+.assistance_form .UploadRequestForm,
+.bussiness-inquiries_form .UploadRequestForm .inputGroup input,
+.UploadRequestForm .inputGroup textarea {
+    padding: 2px;
+    border: 1px solid #000;
+} */
+
+.UploadRequestForm .inputGroup textarea {
+    resize: none;
+    height: 84px !important;
+    overflow-y: auto;
+    width: 720px !important;
+}
+
+
+
+/* .media_form .UploadRequestForm,
+.assistance_form .UploadRequestForm,
+.bussiness-inquiries_form .UploadRequestForm .inputSubmit input {
+    border: 1px solid #000;
+} */
+
+.UploadRequestForm .inputSubmit input {
+    font-size: 19px;
+    font-family: KaTeX_Main, 'Palatino', serif !important;
+    background: transparent;
+    width: 81px;
+    padding: 0;
+    cursor: pointer;
+    font-weight: 700;
+    border: .5px solid gray;
+}
+
+.media_footer.footer-bottom,
+.bussiness-inquiries_footer.footer-bottom,
+.assistance_footer.footer-bottom {
+    margin-top: 80px;
+    /* padding: 12px 0px; */
+}
+
+.footer-bottom {
+    box-shadow: 0px -4px 4px #0000000a;
+    background-color: #f5f5f5;
+    margin-top: 80px;
+    padding: 11px 0px 15px 0 !important;
+    height: 44px;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    left: 0;
+}
+
+.footer-bottom .d-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 720px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer-bottom p {
+    /* width: 11%; */
+    margin: 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.footer-bottom p a span,
+.footer-bottom p a {
+    font: normal 11px KaTeX_Main, Times New Roman, serif !important;
+    line-height: 1;
+    text-decoration: none;
+    color: #000
+}
+
+.footer-bottom p a span {
+    font-size: 14px !important;
+    text-transform: capitalize;
+}
+
+.media_footer.footer-bottom p a span,
+.media_footer.footer-bottom p a,
+.bussiness-inquiries_footer.footer-bottom p a span,
+.bussiness-inquiries_footer.footer-bottom p a,
+.assistance_footer.footer-bottom p a span,
+.assistance_footer.footer-bottom p a {
+    /* font-size: 16px;
+    font-family: 'Palatino', serif !important; */
+    line-height: 1;
+    text-decoration: none;
+    color: #000
+}
+
+/* .bussiness-inquiries.footer-bottom p a span,
+.bussiness-inquiries.footer-bottom p a,
+.assistance_footer.footer-bottom p a span,
+.assistance_footer.footer-bottom p a {
+    font-size: 20px;
+    text-transform: capitalize;
+} */
+
+.trademarkBlock table {
+    padding-top: 40px;
+}
+
+.trademarkBlock table tr td:first-child {
+    width: 85px;
+    display: flex;
+    justify-content: end;
+}
+
+.trademarkBlock table tr td:nth-child(2) {
+    width: 100%;
+    max-width: 635px;
+}
+
+.trademarkBlock .topHeadingBlock .textItalic {
+    font: italic 20px KaTeX_Main, Times New Roman, serif !important;
+}
+
+.trademarkBlock table tr {
+    display: flex;
+    gap: 20px;
+}
+
+.trademarkBlock table tr:first-child {
+    align-items: center;
+}
+
+.trademarkBlock table tr td span {
+    font: normal 21px KaTeX_Main, Times New Roman, serif !important;
+}
+
+
+@media (max-width:767px) {
+
+    /* .footer-bottom p {
+        padding-top: 30px;
+    } */
+    .media_footer.footer-bottom,
+    .bussiness-inquiries_footer.footer-bottom,
+    .assistance_footer.footer-bottom {
+        margin-top: 40px;
+    }
+
+    .media_footer.footer-bottom p,
+    .bussiness-inquiries_footer.footer-bottom p,
+    .assistance_footer.footer-bottom p {
+        padding-top: 30px;
+
+    }
+
+    .footer-bottom {
+        margin-top: 40px;
+        height: 36px;
+        /* position: unset; */
+        padding: 8px 20px 10px;
+    }
+
+    .UploadRequestBlock {
+        padding: 50px 20px;
+    }
+}
+
+/* @media (max-width:575px) {
+    .footer-bottom p {
+        width: 13%;
+    }
+}
+
+@media (max-width:680px) {
+    .footer-bottom p {
+        width: 11%;
+    }
+}
+
+@media (max-width:652px) {
+    .footer-bottom p {
+        width: 12%;
+    }
+}
+
+@media (max-width:575px) {
+    .footer-bottom p {
+        width: 14%;
+    }
+} */
+
+/* @media (max-width:480px) {
+    .footer-bottom p {
+        width: 20%;
+    }
+
+} */
+.formBlock {
+    position: relative;
+}
+
+@media (max-width:767px) {
+    .UploadRequestForm .inputGroup textarea {
+        resize: none;
+        overflow-y: auto;
+        width: auto !important;
+    }
+
+    /* .formBlock {
+        padding: 0px 16px;
+    } */
+}
+
+.loaderForm {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    background: rgb(0 0 0 / 37%);
+    z-index: 13;
+    display: none;
+}
+
+.loaderForm img {
+    max-width: 100%;
+    width: 80px;
+    height: 80px;
+}
+
+/* css for the error popup */
+.popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000006b;
+    align-items: center;
+}
+
+.popup .message {
+    margin-bottom: 8px;
+}
+
+.popup .message p {
+    font-family: 'Palatino', serif !important;
+    font-style: italic;
+    text-align: left;
+    font-size: 17.5px;
+    padding: 25px 0px !important;
+    margin: 0;
+}
+
+.popup .operators {
+    text-align: right;
+}
+
+.popup .operators .operators-button {
+    font-family: "Eras Demi ITC";
+    padding: 10.5px 12.5px;
+    width: auto;
+    color: #00a4df !important;
+    font-size: 17.5px !important;
+    border: none !important;
+    outline: none;
+    font-weight: 300 !important;
+    background: none;
+}
+
+.popup .operators .operators-button:hover {
+    background: #ececec;
+}
+
+.popup .cover-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.popup .content {
+    width: 50%;
+    padding: 2% 24px 0 !important;
+    position: relative;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 0;
+    min-height: 100px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    border: 0.5px solid grey;
+}
+
+.popup .content .heading {
+    margin-bottom: 8px;
+}
+
+.popup .content .heading h4 {
+    font-weight: 700 !important;
+    font: normal 22px KaTeX_Main, Times New Roman, serif;
+    text-align: left !important;
+    padding: 25px 0px !important;
+    color: #000;
+    margin: 0;
+}
+
+.open {
+    height: 100vh;
+    z-index: 5;
+}
+
+/*  ..................Css for the tree start from here......................  */
+.org-tree {
+    display: block;
+    width: fit-content;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.org-tree .org-container .column-view .org-name {
+    font-size: 15px;
+    cursor: pointer;
+    font-family: KaTeX_Main;
+    line-height: 1.1;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 1px;
+    width: max-content;
+    color: #696969;
+    font-weight: 700;
+    padding: 1px;
+}
+
+.org-tree .org-container .column-view .org-name:hover {
+    color: #e6e6e6;
+}
+
+.org-tree .org-container .column-view .org-name span {
+    font-family: 'Times' !important;
+    font-weight: 500;
+    position: absolute;
+    right: -14px;
+    font-size: 15.75px;
+    color: #000;
+}
+
+.org-tree .org-container {
+    display: flex;
+    gap: 28px;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.org-tree .common-range-container .common-range-border {
+    border-top: 1px solid black;
+}
+
+.org-tree .common-range-container .org-range {
+    font-family: 'Times' !important;
+    font-weight: 500;
+    font-size: 15.75px;
+    color: #000;
+    margin-top: -11px;
+    margin-left: 6px;
+    width: max-content;
+}
+
+.org-tree .org-container .column-view {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    position: relative;
+}
+
+.common-range-container {
+    display: flex;
+    width: max-content !important;
+}
+
+.common-range-border {
+    position: relative;
+    border-top: 1px solid #000;
+}
+
+.org-range {
+    font-family: 'Times' !important;
+    font-weight: 500;
+    font-size: 17.5px;
+    color: #000;
+    margin-top: -11px;
+    margin-left: 6px;
+    width: max-content;
+}
+/*  ..................Css for the tree ends here..........................  */
+
+
+/* css class for double scripted Z symbol */
+.katex-ams {
+    font-family: KaTeX_AMS !important;
+    font-style: normal !important;
+    font-size: 25px;
+}
