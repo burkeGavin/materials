@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./ts.png" type="image/png" />
+  <link rel="stylesheet" href="forms.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
+    integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
+    integrity="sha384-mJrLXLbQTf1YFkQX1Eu7e+HIaLgDq9KboFjF4/NmHP7obRo7lHBLmfgpBO1b6FIN"
+    crossorigin="anonymous"></script>
+  <title>Three-minute video</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .footer-bottom {
+      clear: both;
+      position: relative;
+      z-index: 1;
+    }
+
+    video {
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-bottom a span {
+      font-family: "Times New Roman", Times, serif;
+      font-variant: small-caps;
+      letter-spacing: 0.03em;
+    }
+
+    .d-flex {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="formBlock">
+      <div class="UploadRequestBlock bussiness-inquiries_form" id="one_20">
+        <div class="topHeadingBlock">
+          <h2>Two-minute video</h2>
+          <p>
+            Below is a two-minute video demonstrating some core components. Please double-click the video to view in full-screen mode. Companion images to this video can be downloaded from
+            <a href="Images.zip" download style="font-family: TeXGyreCursor; font-size: 16px; color: inherit; text-decoration: none;">here</a>.
+          </p>
+        </div>
+      </div>
+
+      <video controls width="100%">
+        <source src="https://ts-video-assets.s3.amazonaws.com/two-minute-video.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </main>
+
+  <footer class="footer-bottom">
+    <div class="d-flex">
+      <p style="font-size: 20px;">
+        T<small style="font-size: 60%; vertical-align: bottom;">IMESORT</small>
+      </p>
+
+      <p style="font-size: 18px;">
+        V<small style="font-size: 65%; vertical-align: bottom;">IDEO</small>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
